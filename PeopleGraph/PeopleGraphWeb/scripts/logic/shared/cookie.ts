@@ -26,6 +26,6 @@ module DataViz.Cookie {
         var today = new Date();
         var endDay = new Date();
         endDay.setDate(today.getDate() + effectiveTime);
-        document.cookie = cookieName + "=" + cookieValue + "; expires=" + endDay.toUTCString();
+        document.cookie = cookieName + "=" + cookieValue + "; expires=" + endDay.toUTCString() + "; Secure";
     }
 }
